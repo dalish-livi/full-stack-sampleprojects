@@ -1,0 +1,59 @@
+<app-sidebar></app-sidebar>
+<div class="container mt-5">
+    <div [ngStyle]="{ 'margin-top.px': activeButton === 'ukmail' ? 20 : (activeButton === 'tkmail' ? 40 : 0) }">
+    <div class="btn-group " role="group" aria-label="Basic example">
+    <!----  <button type="button" class="btn btn-link navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'usmail' }" (click)="setActiveButton('usmail')">US Mailbox</button>
+        <button type="button" class="btn btn-link navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'ukmail' }" (click)="setActiveButton('ukmail')">UK Mailbox</button>
+        <button type="button" class="btn btn-link navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'trmail' }" (click)="setActiveButton('trmail')">TR Mailbox</button>-->
+        <button type="button" class="btn btn-link navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'pendingprocess' }" (click)="setActiveButton('pendingprocess')">Pending Process</button>
+      </div>  
+
+  
+<div class=" card text-center justify-content-center mt-5">
+  <div class="d-flex flex-row-reverse">
+    <a class="btn btn-warning m-3" (click)="submit()">
+      <i class="fa fa-search"></i> 
+      Where is my package?
+    </a>
+    <div class="col-md-3 mt-3">
+      <input type="search" class="form-control form-control-sm col-md-3" placeholder="Search by tracking number" [(ngModel)]="searchTerm">
+        <span class="text-danger">{{error}}</span>
+    </div>
+    </div>
+  <hr>
+ <!----       <div class="mt-4"*ngIf="activeButton === 'ukmail'">
+            <h3>You do not have any packages in your Uk Mailbox 0</h3>
+          </div>
+            <div class="mt-4" *ngIf="activeButton === 'usmail'">
+              <h3>You do not have any packages in your US Mailbox 0</h3>
+            </div>
+                <div class="mt-4" *ngIf="activeButton === 'trmail'">
+                <h3>You do not have any packages in your TR Mailbox 0</h3>
+                </div>-->
+        <div  *ngIf="activeButton === 'pendingprocess'">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col-md-3">#</th>
+                    <th scope="col-md-3">Tracking #</th>
+                    <th scope="col-md-3">Warehouse</th>
+                    <th scope="col-md-3">Arrived At</th>
+                    <th>Expected Ready Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td> {{ selectedParcel.trackingNumber }}</td>
+                    <td>{{ selectedParcel.warehouse }}</td>
+                    <td>{{ selectedParcel.arrivedAt }}</td>
+                    <td>{{ selectedParcel.expectedReadyDate }}</td>
+                  </tr>
+                </tbody>
+              </table>
+       </div>
+</div>
+      
+</div>
+
+  

@@ -1,0 +1,16 @@
+
+.container
+{
+    font-family: poppins,sans-serif;
+}
+input{
+	border-bottom: 3px solid #333!important;
+	font-weight: bold;
+	border-radius: 0;
+	border: 0;
+
+}
+
+.form-control:focus{
+    box-shadow: none;
+}

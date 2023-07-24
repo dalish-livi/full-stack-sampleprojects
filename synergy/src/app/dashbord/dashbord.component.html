@@ -1,0 +1,99 @@
+<app-sidebar></app-sidebar>
+
+   <div class="container">
+     <div class="row">
+<div class="card mt-5">
+    <div class="card-body">
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators"> <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button></div>
+          <div class="carousel-inner">
+             <div class="carousel-item active">
+                <img src="/assets/dashboard/18157231.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                   <h5>Welcome Order.in</h5>
+                   <p>On demand last Male delivery.</p>
+                </div>
+             </div>
+             <div class="carousel-item">
+                <img src="/assets/dashboard/3876628.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                   <h5>Welcome Order.in</h5>
+                   <p>Enjoying.</p>
+                </div>
+             </div>
+             <div class="carousel-item">
+                <img src="/assets/dashboard/paper-urban-transport-composition.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+       </div>
+    </div>
+   </div>
+   <div class="row">
+      <div class="col-md-4">
+         <div class="card-body">
+            <h1>Your Mailbox</h1>
+             <button class="btn btn-link navbar-brand"routerLink="/mymailbox" style="color: #405189;">Where is my package?
+               <b class="text-light" style="background-color:#ff0000 ;">NEW</b>
+            </button>
+            <div>You do not have any packages in your mailbox.</div>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="card-body">
+            <h2>Shopping Address</h2>
+            <h4>Select Ship7 Warehouse:</h4>
+            <select class="form-control form-control-md mt-2 caret" name="category"(change)="onSelect($event)">
+               <option>Select State</option>
+               <option *ngFor="let branchs of branch" value="{{branchs.state}}">
+                  {{branchs.state}} </option>
+             </select>
+             <div class="card c h-100 mt-2">
+               <div class="d-flex justify-content-center">
+                  <div><i class="fa-solid fa-clock-one-thirty"></i> UPDATES: <span style="color: #ff0000;">: In 1 Business Day</span></div>
+               </div>
+             </div>
+             
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="card-body">
+            <h2>Shipment History</h2>
+            <span>You do not have any shipment orders in the last month.</span>
+         </div>
+      </div>
+         <div class="d-flex justify-content-center">
+            <div>
+               <ul class="address" *ngFor="let adress of address">
+               <div class="row">
+                   <span class="col-md-5 ms-4"style="color: #405189;">Name</span>
+                   <li class="col-md-3"><b>{{adress.addressline1}}</b></li>
+            </div>
+            <div class="row mt-4">
+                <span class="col-md-5  ms-4"style="color: #405189;">Address</span>
+                  <li class="col-md-5"><b>{{adress.addressline2}}</b></li>
+            </div>
+            <div class="row mt-4">
+               <span class="col-md-5  ms-4"style="color: #405189;">City</span>
+                  <li class="col-md-3"><b>{{adress.city}}</b></li>
+            </div>
+            <div class="row mt-4">
+                <span class="col-md-5  ms-4"style="color: #405189;">Pincode</span>
+                  <li class="col-md-3"><b>{{adress.pincode}}</b></li>
+               </div>
+               <div class="row mt-4">
+                  <span class="col-md-5  ms-4"style="color: #405189;">State</span>
+                  <li class="col-md-3"><b>{{adress.state}}</b></li>
+               </div>
+               <div class="row mt-4">
+                  <span class="col-md-5  ms-4"style="color: #405189;">Phone</span>
+                  <li class="col-md-3"><b>{{adress.phone}}</b></li>
+                  </div>
+               </ul>
+         </div>
+       </div>
+   </div>
+</div>
+</div>

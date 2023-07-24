@@ -1,0 +1,45 @@
+<app-sidebar></app-sidebar>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="text-dark">
+                        <h6>Personal Information</h6>
+                        <form>
+                            <label for="name"class="text-dark mt-2">COMPANY / BUSINESS NAME (Optional)</label>
+                            <input type="text" class="form-control col-md-5">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name"class="text-dark mt-4">First Name</label>
+                                     <input type="text" class="form-control col-md-5">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name"class="text-dark mt-4">Last Name</label>
+                                     <input type="text" class="form-control col-md-5">
+                                </div>
+                            </div>
+                            <label for="name"class="text-dark mt-4">ALT. NAME (Optional: Your name in your local language if not in Latin Alphabet)</label>
+                            <input type="text" class="form-control col-md-5">
+                            <br>
+                            <strong>COUNTRY</strong>
+                            <select class="form-control form-control-md mt-2" name="category">
+                                <option value=""><strong>New jersey Address</strong> </option>
+                                <option value="">Choose1... </option>
+                                <option value="">Choose2... </option>
+                              </select>
+                              <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <button class="btn btn-success" routerLink="/updatepersonaldetails">Save Change</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-dark" routerLink="/myaccount">Back to myaccount</button>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

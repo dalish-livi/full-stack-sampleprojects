@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="d-flex justify-content-center">
+        <img src="/assets/logo1-removebg-preview (2).png" width="200" class="mt-5">
+    </div>
+    <div class="d-flex justify-content-center">
+            <div class="r row ">
+                <div class="card col-md-12">
+                    <div class="card-body">
+                        <form [formGroup]="login" (ngsubmit)="submit()">
+                                        <div class="row">
+                                             <div class="col-md-12">
+                                                <label  class="form-label mt-3">Email</label>
+                                                    <input type="text" formControlName ="email"  class="form-control text-right" placeholder="Email"/> 
+                                                    <span *ngIf="login.controls['email'].invalid && (login.controls['email'].dirty || login.controls['email'].touched)" class="text-danger c-1">
+                                                        <span *ngIf="login.controls['email'].errors"> Enter Email</span>
+                                                      </span>
+                                                </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-md-12">
+                                               <label  class="form-label m-3">password</label>
+                                               <input [type]="changetype?'password':'text'" class="form-control" placeholder="Enter your password" formControlName ="password">
+                                               <span class="eyeicon" (click)="viewpass()">
+                                               </span>
+                                                   <span *ngIf="login.controls['password'].invalid && (login.controls['password'].dirty || login.controls['password'].touched)" class="text-danger c-1">
+                                                       <span *ngIf="login.controls['password'].errors"> Enter password</span>
+                                                     </span>
+                                               </div>
+                                                <div class="d-flex justify-content-center">
+                                                 <button class="btn btn-primary mt-3 col-md-3" (click)="submit()">Login</button></div>
+                                        </div>
+                            </form>
+                      </div>
+                </div>
+        </div>
+</div>
+
+<app-footer></app-footer>

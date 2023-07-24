@@ -1,0 +1,67 @@
+<app-sidebar></app-sidebar>
+<div class="container mt-5">
+   <div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="name"class="text-dark mt-2">ORIGIN</label>
+                        <select class="form-control form-control-md mt-2" name="category">
+                            <option  *ngFor="let branchs of branch">{{branchs.state}} </option>
+                      </select>    
+            </div>
+            <div class="col-md-6">
+                <label for="name"class="text-dark mt-2">DESTINATION</label>
+                        <select class="form-control form-control-md mt-2" name="category" >
+                            <option *ngFor="let countries of coun">{{countries}}</option>
+                      </select>
+            </div>
+            <div class="col-md-6 mt-5">
+                <label for="name"class="text-dark mt-2">UNIT</label>
+                        <select class="form-control form-control-md mt-2" name="category">
+                            <option *ngFor="let units of unit">{{units}}</option>
+
+                      </select>
+            </div>
+            <div class="mt-5">
+                <h3>Parcels<button class="btn btn-warning btn-sm ms-4"  (click)="addNewParcel()"><i class="fa fa-plus"></i> Add New Parcel</button></h3>
+            </div>
+            <div class="row mt-4">
+            <div class="col-md-1 hidden-xs text-center">PARCEL#</div>
+            <div class="col-md-4 hidden-xs text-start ms-1" >WEIGHT</div>
+            <div class="col-md-4 hidden-xs text-start ms-1">DIMENSIONS</div>
+            <div class="col-md-2 hidden-xs text-center">VALUE (USD)</div>
+            </div>
+            <div class="row mt-4" *ngFor="let parcel of parcels; let i = index">
+                <div class="col-md-1 text-center">
+                  <h2 class="margin-0">{{ i + 1 }}</h2>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control text-center" [(ngModel)]="parcel.weight" min="0" placeholder="weight">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control text-center"  [(ngModel)]="parcel.length" min="0" placeholder="Lenght">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control text-center" [(ngModel)]="parcel.width" min="0" placeholder="widht">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control text-center" [(ngModel)]="parcel.height"  min="0" placeholder="Height">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control text-center" [(ngModel)]="parcel.value" min="0" placeholder="Value">
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-danger" (click)="removeParcel(i)" *ngIf=" i === parcels.length -1 && i !== 0 ">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-success col-md-4 mt-5 m-3">Get Shipping Rate</button>
+    </div>
+   </div>
+</div>
+
+
+
+  

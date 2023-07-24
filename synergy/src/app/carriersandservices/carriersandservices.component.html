@@ -1,0 +1,55 @@
+<app-sidebar></app-sidebar>
+<div class="bgcolor">
+<div class="container">
+    <div class="card mt-5">
+      <form>
+        <div class="form-group row mt-2 ms-3">
+          <label for="staticEmail" class="col-form-label">DESTINATION</label>
+          <div class="col-sm-4">
+            <select class="form-control form-control-md" name="category" [(ngModel)]="selectedCountry">
+              <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+            </select>
+          </div> 
+          <div class="col-sm-6 ">
+            <button class="btn btn-success btn-md" (click)="displayServiceName()">Get Product &amp; Services</button>
+          </div>
+        </div> 
+      </form>
+    </div>
+    <div class="mt-5 service"*ngIf="selectedServices">
+      <h3 style="color: #405180;">Services:</h3>
+      <ul> 
+        <div *ngFor="let service of selectedServices">
+        <div class="row">
+          <div class="col-md-2">
+            <input class="form-check-input" type="checkbox" [checked]="selectedService === service" id="flexCheckDefault" (click)="showServiceDetails(service)">
+              <span class="m-1"><b> {{ service.sevicename}}</b></span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="selectedService">
+        <table class="table text-center mt-4">
+          <thead style="background-color: #EB5824;" class="text-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Service Name</th>
+              <th scope="col">Estimated Date</th>
+              <th scope="col">Total Weight</th>
+              <th scope="col">Tracking</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td> {{ selectedService.sevicename }}</td>
+              <td> {{ selectedService.estamiteddate }}</td>
+              <td> {{ selectedService.totalWeight }}</td>
+              <td> {{ selectedService.tracking }}</td>
+            </tr>
+          </tbody>
+        </table>
+</div>
+      </ul>
+    </div>
+</div>
+</div>

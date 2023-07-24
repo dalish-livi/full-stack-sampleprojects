@@ -1,0 +1,20 @@
+<app-navbar *ngIf="router.url !='/sidebar' && !router.url.startsWith('/dashbord')  && !router.url.startsWith('/myaddress')
+&& !router.url.startsWith('/mymailbox') && !router.url.startsWith('/shipmenthistory')
+&& !router.url.startsWith('/billing') && !router.url.startsWith('/creditcard')
+&& !router.url.startsWith('/myaccount') && !router.url.startsWith('/updatepersonaldetails')
+&& !router.url.startsWith('/changepassword') && !router.url.startsWith('/addressbook')
+&& !router.url.startsWith('/costcalculator') && !router.url.startsWith('/carriersandservices')">
+
+</app-navbar>
+<app-homepage *ngIf="!router.url.startsWith('/joinus') && !router.url.startsWith('/login') && !router.url.startsWith('/pricing') && !router.url.startsWith('/howitswork')
+&& !router.url.startsWith('/aboutus') && !router.url.startsWith('/sidebar') && !router.url.startsWith('/dashbord') && !router.url.startsWith('/myaddress')
+&& !router.url.startsWith('/mymailbox') && !router.url.startsWith('/shipmenthistory')
+&& !router.url.startsWith('/billing') && !router.url.startsWith('/creditcard')
+&& !router.url.startsWith('/myaccount') && !router.url.startsWith('/updatepersonaldetails') && !router.url.startsWith('/changepassword')
+&& !router.url.startsWith('/costcalculator') && !router.url.startsWith('/addressbook') && !router.url.startsWith('/carriersandservices')
+&& !router.url.startsWith('/homepage')">
+
+</app-homepage>
+
+<router-outlet></router-outlet>
+

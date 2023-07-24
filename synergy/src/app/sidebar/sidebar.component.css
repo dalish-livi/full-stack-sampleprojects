@@ -1,0 +1,46 @@
+#sidebar {
+  position: fixed;
+  font-family: poppins,sans-serif;
+  top: 0;
+  left: -250px;
+  width: 270px;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(to right bottom, #5645a6, #6cc7c2);
+  color: whitesmoke;
+  
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+}
+
+.list-unstyled li {
+  padding: 5px;
+}
+
+
+.content {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.content.sidebar-open {
+  margin-left: 250px;
+}
+
+.toggle-button {
+  display: block;
+  margin: 10px;
+  background-color: #405180;
+}
+
+.content {
+
+  background-image: linear-gradient(to right bottom, #5645a6, #6cc7c2);
+  padding: 10px 20px;
+}

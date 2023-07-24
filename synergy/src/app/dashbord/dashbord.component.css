@@ -1,0 +1,21 @@
+.d-block{
+    width: 1950px;
+    height: 400px;
+}
+.container{
+    font-family: source sans pro,sans-serif;
+}
+.c{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.dashbord{
+    background-color:  rgba(0, 35, 71, 0.1);
+    padding-bottom: 20%;
+    
+}
+
+.address{
+    font-family:poppins,sans-serif;
+    list-style: none;
+}

@@ -1,0 +1,49 @@
+<app-sidebar></app-sidebar>
+<div class="container mt-5">
+    <div class="row">
+        <div class="card c1">
+            <div class="card-body">
+                <h4>Your Account Balance : <strong style="color: #405180;"></strong></h4>
+                <br>
+                <hr>
+                <h4>Select Payment Option:</h4>
+                <div class="card c2 co-md-7 mt-4">
+                    <div class="card-body">
+                        <div class="card-header text-light">ENTER NEW CREDIT CARD</div>
+                        <div class="card c3 col-md-10 m-1" style="border-color: #405180;">
+                            <div class="card-body">
+                                <form (ngSubmit)="makePayment()" #paymentForm="ngForm">
+                                    <div class="form-group">
+                                        <label for="name"class="text-warning m-1">Card Number</label>
+                                              <input type="text" name="card-num" class="form-control col-md-5" placeholder="1234 5678 9012 3457" size="17" id="cno" minlength="19" maxlength="19"[(ngModel)]="cardNumber" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name"class="text-warning m-1 mt-2">Cardholder's Name</label>
+                                         <input type="text" class="form-control" name="name" placeholder="Name" size="17"required>
+                                    </div>
+                                    <div class="form-group pt-2">
+                                        <div class="row d-flex">
+                                            <div class="col-sm-4">
+                                                <label for="name"class="text-warning m-1 mt-2">Expiration</label>
+                                                <input type="text" name="exp"class="form-control" placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" [(ngModel)]="expiryDate" required>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label for="name"class="text-warning m-1 mt-2">Cvv</label>
+                                                <input type="password" name="cvv" class="form-control" placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" [(ngModel)]="cvv" required>
+                                            </div>
+                                            <div class="col-sm-5 pt-0 mt-3">
+                                                <button class="btn btn-primary"[disabled]="paymentForm.invalid"><i class="fas fa-arrow-right px-3 py-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>		
+                                </form>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

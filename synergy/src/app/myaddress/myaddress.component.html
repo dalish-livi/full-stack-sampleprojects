@@ -1,0 +1,245 @@
+<app-sidebar></app-sidebar>
+<div class="container mt-5">
+    <div class="row">
+        <div class="card h-100">
+            <div class="card-body">
+                <span style="color: #dd4b39; font-family:poppins,sans-serif;">
+                    Due to unfortunate pandemic COVID-19,
+                    <b>Aramex, SMSA </b>
+                         And
+                    <b>Postal Economy</b>
+                    will be operating once a week until further notice.
+                    <br><br>
+                    The weekly cut-off time for <b> Aramex</b> is <b>MONDAY 4:00 PM EST</b>.
+                    <br><br>
+                    For <b>SMSA</b> and Postal Economy cut-off is <b>THURSDAY 3:00 PM EST</b>.
+                    <br>
+                    <br>
+                    For <b>Naqel </b>cut-off is <b>THURSDAY at 12 PM EST</b>.
+                    <br>
+                    <br>
+                    For our other daily services (DHL, FedEx, UPS) cut-off time is <b> 12.00 PM </b>EST.
+                    <br><br>
+                    As SHIP7 Team, we strongly advise you to complete your orders and your check-outs before this cut-off time
+                    <br><br>
+                    Our warehouse working hours are<b>Monday to Friday from 10:00 AM to 5:00 PM.</b> Kindly schedule your deliveries accordingly. For the packages delivered during weekend, we cannot be hold accountable since we do not operate during weekends.
+                    <br>
+                    <br>
+                    We appreciate your understanding and your cooperation during these difficult times!
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/myaddress/myaddress-1.png">
+                </div>
+                <h2 class="text-center">New Jersey Address</h2>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card c mt-2">
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/myaddress/myaddress-1.png">
+                </div>
+                <h2 class="text-center">Tax Free Delaware Address</h2>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                   <i class="fa-solid fa-clock-one-thirty"></i> UPDATES: <span style="color: #ff0000;">: In 1 Business Day</span></div>
+                   <button class="btn btn-link navbar-brand" style="color: #405189;">Learn More
+                 </button>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                   <i class="fa-solid fa-clock-one-thirty"></i> UPDATES: <span style="color: #ff0000;">: In 1 Business Day</span></div>
+                   <button class="btn btn-link navbar-brand" style="color: #405189;">Learn More
+                 </button>
+              </div>
+        </div>
+        <div class="col-md-6 mt-5 ">
+          <div class="d-flex justify-content-center">
+            <div>
+              <ul class="address">
+                <ng-container *ngFor="let addr of address">
+                  <ng-container *ngIf="addr.id === 1">
+                    <div class="row">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Name</span>
+                      <li class="col-md-3"><b>{{ addr.addressline1 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Address</span>
+                      <li class="col-md-5"><b>{{ addr.addressline2 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">City</span>
+                      <li class="col-md-3"><b>{{ addr.city }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Pincode</span>
+                      <li class="col-md-3"><b>{{ addr.pincode }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">State</span>
+                      <li class="col-md-3"><b>{{ addr.state }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Phone</span>
+                      <li class="col-md-3"><b>{{ addr.phone }}</b></li>
+                    </div>
+                  </ng-container>
+                </ng-container>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="d-flex justify-content-center">
+            <div>
+              <ul class="address">
+                <ng-container *ngFor="let addr of address">
+                  <ng-container *ngIf="addr.id === 2">
+                    <div class="row">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Name</span>
+                      <li class="col-md-3"><b>{{ addr.addressline1 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Address</span>
+                      <li class="col-md-5"><b>{{ addr.addressline2 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">City</span>
+                      <li class="col-md-3"><b>{{ addr.city }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Pincode</span>
+                      <li class="col-md-3"><b>{{ addr.pincode }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">State</span>
+                      <li class="col-md-3"><b>{{ addr.state }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Phone</span>
+                      <li class="col-md-3"><b>{{ addr.phone }}</b></li>
+                    </div>
+                  </ng-container>
+                </ng-container>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mt-5">
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/myaddress/myaddress-2.png">
+                </div>
+                <h2 class="text-center">London Address</h2>
+              </div>
+        </div>
+        <div class="col-md-6 mt-5" >
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/myaddress/myaddress-3.png">
+                </div>
+                <h2 class="text-center">Istanbul Address</h2>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                   <i class="fa-solid fa-clock-one-thirty"></i> UPDATES: <span style="color: #ff0000;">: In 1 Business Day</span></div>
+                   <button class="btn btn-link navbar-brand" style="color: #405189;">Learn More
+                 </button>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card c  mt-2">
+                <div class="d-flex justify-content-center">
+                   <i class="fa-solid fa-clock-one-thirty"></i> UPDATES: <span style="color: #ff0000;">: In 1 Business Day</span></div>
+                   <button class="btn btn-link navbar-brand" style="color: #405189;">Learn More
+                 </button>
+              </div>
+        </div>
+         <div class="col-md-6 mt-5">
+          <div class="d-flex justify-content-center">
+            <div>
+              <ul class="address">
+                <ng-container *ngFor="let addr of address">
+                  <ng-container *ngIf="addr.id === 2">
+                    <div class="row">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Name</span>
+                      <li class="col-md-3"><b>{{ addr.addressline1 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Address</span>
+                      <li class="col-md-5"><b>{{ addr.addressline2 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">City</span>
+                      <li class="col-md-3"><b>{{ addr.city }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Pincode</span>
+                      <li class="col-md-3"><b>{{ addr.pincode }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">State</span>
+                      <li class="col-md-3"><b>{{ addr.state }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Phone</span>
+                      <li class="col-md-3"><b>{{ addr.phone }}</b></li>
+                    </div>
+                  </ng-container>
+                </ng-container>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="d-flex justify-content-center">
+            <div>
+              <ul class="address">
+                <ng-container *ngFor="let addr of address">
+                  <ng-container *ngIf="addr.id === 4">
+                    <div class="row">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Name</span>
+                      <li class="col-md-3"><b>{{ addr.addressline1 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Address</span>
+                      <li class="col-md-5"><b>{{ addr.addressline2 }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">City</span>
+                      <li class="col-md-3"><b>{{ addr.city }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Pincode</span>
+                      <li class="col-md-3"><b>{{ addr.pincode }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">State</span>
+                      <li class="col-md-3"><b>{{ addr.state }}</b></li>
+                    </div>
+                    <div class="row mt-4">
+                      <span class="col-md-5 ms-4" style="color: #405189;">Phone</span>
+                      <li class="col-md-3"><b>{{ addr.phone }}</b></li>
+                    </div>
+                  </ng-container>
+                </ng-container>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+</div>

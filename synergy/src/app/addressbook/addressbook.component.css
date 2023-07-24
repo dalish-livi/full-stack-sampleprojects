@@ -1,0 +1,13 @@
+.container{
+    font-family: poppins,sans-serif;
+}
+
+.right-popup .modal-dialog {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 18%;
+    margin-left: auto;
+    transform: translateX(100%);
+  }
+  

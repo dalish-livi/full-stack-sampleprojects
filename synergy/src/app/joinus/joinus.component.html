@@ -1,0 +1,65 @@
+<div class="container-fluid">
+<div class="d-flex justify-content-center">
+    <img src="/assets/logo1-removebg-preview (2).png" width="200" class="mt-5">
+</div>
+<div class="d-flex justify-content-center">
+        <div class="r row ">
+            <div class="card col-md-7">
+                <div class="card-body">
+                    <form [formGroup]="joinus" (ngsubmit)="submit()">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label  for="fname"class="form-label">First Name</label>
+                                    <input type="text" formControlName ="firstname"  class="form-control" placeholder="First Name"/> 
+                                    <span *ngIf="joinus.controls['firstname'].invalid && (joinus.controls['firstname'].dirty || joinus.controls['firstname'].touched)" class="text-danger c-1">
+                                        <span *ngIf="joinus.controls['firstname'].errors"> Enter FirstName</span>
+                                      </span>
+                             </div>
+                                <div class="col-md-6">
+                                    <label  class="form-label">Last Name</label>
+                                        <input type="text" formControlName ="lastname"  class="form-control" placeholder="First Name"/> 
+                                        <span *ngIf="joinus.controls['lastname'].invalid && (joinus.controls['lastname'].dirty || joinus.controls['lastname'].touched)" class="text-danger c-1">
+                                            <span *ngIf="joinus.controls['lastname'].errors"> Enter FirstName</span>
+                                          </span>
+                                    </div>
+                                    <div class="row">
+                                         <div class="col-md-12">
+                                            <label  class="form-label mt-4">Email</label>
+                                                <input type="text" formControlName ="email"  class="form-control" placeholder="Email"/> 
+                                                <span *ngIf="joinus.controls['email'].invalid && (joinus.controls['email'].dirty || joinus.controls['email'].touched)" class="text-danger c-1">
+                                                    <span *ngIf="joinus.controls['email'].errors"> Enter Email</span>
+                                                  </span>
+                                            </div>
+                                     </div>
+                                     <div class="row">
+                                        <div class="col-md-6">
+                                           <label  class="form-label m-4">password</label>
+                                           <input [type]="changetype?'password':'text'" class="form-control" placeholder="Enter your password" formControlName ="password">
+                                           <span class="eyeicon" (click)="viewpass()">
+                                           </span>
+                                               <span *ngIf="joinus.controls['password'].invalid && (joinus.controls['password'].dirty || joinus.controls['password'].touched)" class="text-danger c-1">
+                                                   <span *ngIf="joinus.controls['password'].errors"> Enter password</span>
+                                                 </span>
+                                           </div>
+                                           <div class="col-md-6">
+                                            <label  class="form-label m-4">confirm password</label>
+                                            <input [type]="changetype?'password':'text'" class="form-control" placeholder="Enter your password" formControlName ="confirmpassword">
+                                            <span class="eyeicon" (click)="viewpass()">
+                                            </span>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                             <button class="btn btn-primary mt-3 col-md-3" (click)="submit()">Join us</button></div>
+                                             <div class="col-md-8 mt-3">
+                                                Alredy You have accound-> <button routerLink="/login" class="btn btn-success">login</button>
+                                             </div>
+                                    </div>
+                                 </div>
+                        </form>
+                  </div>
+            </div>
+    </div>
+</div>
+
+</div>
+
+<app-footer></app-footer>

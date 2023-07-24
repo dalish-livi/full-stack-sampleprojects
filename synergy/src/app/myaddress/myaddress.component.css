@@ -1,0 +1,25 @@
+.c{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.container
+{
+    font-family: poppins,sans-serif;
+}
+input{
+	border-bottom: 1.5px solid #E8E5D2!important;
+	font-weight: bold;
+	border-radius: 0;
+	border: 0;
+
+}
+
+input:focus{
+    box-shadow: none;
+}
+
+
+.address{
+    font-family:poppins,sans-serif;
+    list-style: none;
+}

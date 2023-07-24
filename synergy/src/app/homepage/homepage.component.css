@@ -1,0 +1,58 @@
+.r{
+    padding-top: 10%;
+    padding-left: 15%;
+}
+
+.container-fluid{
+    background:#f0f8ff;
+}
+
+.text-block-49{
+    text-decoration-color: white;
+    padding-top: 30%;
+    padding-left: 3%;
+}
+.text-block-48{
+    text-decoration-color: white;
+    padding-top: 0%;
+    
+    padding-left: 3%;
+    font-weight: 600;
+}
+
+.crd2{
+
+    padding-bottom: 5%;
+    background: #405189;
+    padding-left: 2%;
+}
+.crd3{
+    font-family: poppines,sans-serif;
+    background: #F1A268;
+    font-size: medium;
+}
+
+.c1{
+    width: 1500px;
+     height: 200px;
+     align-items: center;
+}
+
+.r1{
+    background:#ffecdc;
+    height: 280px;
+}
+
+.btn{
+	border: none;
+	border-radius: 30px;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.ShoppingBenefits{
+    background-color: #405189;
+    font-family: poppins,sans-serif;
+    height: 500px;
+
+}

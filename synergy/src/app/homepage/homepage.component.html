@@ -1,0 +1,280 @@
+<div>
+<div class="container-fluid mt-5">
+    <div class="row g-3 r">
+        <div class="col-md-6">
+            <div class="d-flex justify-content-center">
+                <div class="card-body">
+                    <img src="/assets/4753605.jpg"width="750px" >
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex justify-content-center">
+                <div class="card-body">
+                     <p class="text-block-49">
+                       SHIPPING TO ALL 7 CONTINENTS, 7 DAYS A WEEK
+                     </p>
+                     <h1 class="text-block-48">
+                        Remove
+                        <br>
+                        boundaries
+                        <br>
+                        with Ship7
+                     </h1>
+                     <p class="text-block-48">
+                        Shop from your favorite stores in USA, UK and TR, Order.In will bring your packages to your doorstep! Enjoy free membership, free consolidation and free 60-day storage!
+                     </p>
+                     <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn1 btn-success mt-3 my-3" routerLink="/login">Login</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="r1">
+<div class="d-flex justify-content-center">
+    <div class="row g-2 mt-5">
+            <div class="btn-group " role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning col-md-5 navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'shippingpartner' }" (click)="setActiveButton('shippingpartner')">Shipping Partner</button>
+                <button type="button" class="btn btn-warning col-md-4 navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'stores' }" (click)="setActiveButton('stores')">Stores</button>
+                <button type="button" class="btn btn-warning col-md-4  navbar-brand text-dark" [ngClass]="{ 'active': activeButton === 'payment' }" (click)="setActiveButton('payment')">Payment</button>
+              </div>  
+        </div>
+</div>
+<div class="row d-flex justify-content-center">
+        <div class="c1">
+            <div class="card-body">
+                <div class="d-flex justify-content-center">
+                <div class="mt-4"*ngIf="activeButton === 'shippingpartner'">
+                  <img src="/assets/home/home-1.svg" width="150" class="ms-4">
+                  <img src="/assets/home/home-3.svg" width="150" class="ms-4">
+                  <img src="/assets/home/home-4.svg" width="150" class="ms-4">
+                  <img src="/assets/home/home-5.svg" width="150" class="ms-4">
+                  </div>
+                    <div class="mt-4" *ngIf="activeButton === 'stores'">
+                        <img src="/assets/home/home-6.svg" width="150" class="ms-4">
+                        <img src="/assets/home/home-7.svg" width="150" class="ms-4">
+                        <img src="/assets/home/home-8.svg" width="150" class="ms-4">
+                        <img src="/assets/home/home-9.svg" width="150" class="ms-4">
+                        <img src="/assets/home/home-10.svg" width="150" class="ms-4"> 
+                    </div>
+                        <div class="mt-4" *ngIf="activeButton === 'payment'">
+                            <img src="/assets/home/home-11.svg" width="150" class="ms-4">
+                            <img src="/assets/home/home-12.svg" width="150" class="ms-4">
+                            <img src="/assets/home/home-13.svg" width="150" class="ms-4">
+                            <img src="/assets/home/home-14.svg" width="150" class="ms-4">
+                            <img src="/assets/home/home-15.svg" width="150" class="ms-4">
+                        </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="d-flex justify-content-center mt-5">
+    <h1 class="text-block-52">
+      2 EASY STEP TO ORDER
+   </h1>
+  </div>
+  <div class="container">
+    <div class="row c3">
+    <div class="col-md-6 mt-3">
+      <div class="card crd2">
+          <div class="card-body justify-content-center">
+              <h3 class="text-white text-center">
+                Step-1
+              </h3>
+              <p class="text-white text-center mt-3">
+                  Start shopping from your favorite retailers <br> USA, UK and TR
+              </p>
+          </div>
+      </div>
+        <div class="card crd2 mt-3">
+            <div class="card-body justify-content-center">
+                <h3 class="text-white text-center">
+                  Step-2
+                </h3>
+                <p class="text-white">
+                  Get your FREE Ship7 adress and Ship7 will bring your orders to your doorstep
+                </p>
+            </div>
+        </div>
+  </div>
+    <div class="col-md-6 mt-3">
+    <div class="card crd3">
+        <div class="card-body">
+          <p class="form-text text-center">
+            Try out Ship7 services for reliable and affordable shop&ship service.
+          </p>
+          <h3 class="text-block-60 mt-3">
+            Features:
+          </h3>
+          <li>free usa,uk and tr addresses</li>
+          <li>free 60-day storage</li>
+          <li>free package receiving</li>
+          <li>free handling</li>
+          <li>free insurance service up to $100</li>
+          <li>free pictures of orders</li>
+          <li>free consolidation</li>
+          <li>online tracking of your shipments</li>
+          <li>responsive customer service & assistance</li>
+          <li>up to 80% discount for shipping services</li>
+        </div>
+    </div>
+</div>
+</div>
+<div class="d-grid gap-2 col-3 mx-auto">
+    <button class="btn btn1 btn-success mt-4 my-3" routerLink="/login">see more</button>
+ </div>
+</div>
+
+<div class="ShoppingBenefits mt-5">
+    <div class="container">
+       <div class="row card-1">
+         <div class="col-md-6">
+           <div class="card  mt-5">
+             <div class="card-body">
+               <h3>
+                 Shopping Benefits
+               </h3>
+               <p>Ship7 offers tax-free address for cost saving.</p>
+               <hr>
+               <h3 class="text-block-60 mt-3">
+                 Features:
+               </h3>
+               <li>No US Sales Tax</li>
+               <li>Access to all USA,UK and TR based retailers</li>
+               <li>Shopping assistance</li>
+               <li>Return handling</li>
+               <li>Sales & Coupons notifications</li>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-6">
+           <div class="card mt-5">
+             <div class="card-body">
+               <h3>
+                 Shopping Benefits
+               </h3>
+               <p>Ship7 is here for a hassle-free shipping experience.</p>
+               <hr>
+               <h3 class="text-block-60 mt-3">
+                 Features:
+               </h3>
+               <li>No hidden fee</li>
+               <li>Real-time order tracking</li>
+               <li>Freight option for oversize items</li>
+               <li>Multi-carrier options</li>
+               <li>Free insurance service up to $100</li>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="d-flex justify-content-center mt-4">
+       <button type="button" class="btn btn-success text-light navbar-brand  col-md-3" routerLink="/joinus">See more</button>
+     </div>
+     
+</div>
+
+<div></div>
+
+<footer class=" footer text-center text-lg-start bg-white text-muted mt-5">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+  
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Order.IN
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+  
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Grocery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Factions</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Home Designs</a>
+            </p>
+          </div>
+       
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">shop</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+  
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>Chennai, IN</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              orderin@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +91  12345 67889</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> +91  12345 67899</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold">Order.in</a>
+    </div>
+  </footer>
+ 
+
+
+
+

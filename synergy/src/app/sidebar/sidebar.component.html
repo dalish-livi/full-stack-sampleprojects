@@ -1,0 +1,105 @@
+<nav id="sidebar" [ngClass]="{'active': isSidebarOpen}">
+    <div class="sidebar-header mt-2">
+        <img src="/assets/icons8-user-100 (1).png" width="100">
+    </div>
+    <ul class="list-unstyled components mt-3 ">
+            <li>
+                <a href="/dashbord" class="navbar-brand nav-stacked text-light">
+                <i class="fa-solid fa-home"></i>
+                <span class="ms-2">Home</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/myaddress" class="navbar-brand text-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                <span class="ms-2">My Address</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/mymailbox" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                <span class="ms-2"> Where is My Order</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/shipmenthistory" class="navbar-brand text-light mt-5">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                <span class="ms-2">Shipment History</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/billing" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-file-lines"></i>
+                <span class="ms-2">Billing</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/myaccount" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-id-card"></i>
+                <span class="ms-2">My Account</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/addressbook" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-envelope"></i>
+                <span class="ms-2">Address Book</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/costcalculator" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-calculator"></i>
+                <span class="ms-2">Cost Calculator</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/carriersandservices" class="navbar-brand text-light mt-5">
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                <span class="ms-2">Carriers & Service</span>
+                </a>
+            </li>
+            <li class="text-dark mt-2" style="background-color: #333333;"> 
+                <span class="text-light">EXPLORE MORE AT ORDER.IN</span>
+
+            </li>
+            <li class="mt-2">
+                <a href="/homepage" class="navbar-brand text-light mt-5">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="ms-2">Back To Web</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                <span class="ms-2">Store Directory</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/dashbord" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-life-ring"></i>
+                <span class="ms-2">Help</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/dashbord" class="navbar-brand text-light mt-5">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <span class="ms-2">F.Q.A</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/howitswork" class="navbar-brand text-light mt-5">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <span class="ms-2">How its work</span>
+                </a>
+            </li>
+            <li class="mt-2">
+                <a href="/dashbord" class="navbar-brand text-light mt-5">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="ms-2">Logout</span>
+                </a>
+            </li>
+           </ul>
+  </nav>
+  <div class="content" [ngClass]="{'sidebar-open': isSidebarOpen}">
+    <button class="btn btn-primary toggle-button" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  
