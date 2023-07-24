@@ -1,0 +1,112 @@
+.navbar{
+    font-weight:500;
+    background-color: whitesmoke;
+}
+.position-absolute{
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+.h{
+    color:brown;
+    padding-top: 8%;
+    padding-left: 8%;
+    margin: 3cap;
+}
+
+.h1{
+    padding-left: 10%;
+    font-weight: 700;
+}
+
+.p{
+    width: 19rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-left: 10%;
+
+}
+
+.shop{
+    padding-left: 11%;
+      font-weight: bold;
+}
+.img{
+    padding-left:8% ;
+}
+
+.h2{
+    padding-left: 11%;
+    align-items: center;
+    padding-top: 11%;
+    font-weight: 800;
+}
+
+.p1{
+    width: 27rem;
+    padding-left: 10%;
+    font-weight: 600;
+}
+
+.row{
+    background-color: lightblue;
+}
+
+.about{
+     
+     background: rgb(145, 197, 229);
+}
+
+
+.about{
+    background-color:#48808d;
+}
+
+.p2{
+    color: white;
+    font-weight: 900;
+    padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.a{
+    color: white;
+    font-weight: 900;
+    padding-bottom: 6%;
+     padding-top: 7%;
+     padding-right: 11%;
+}
+
+.h3{
+
+    padding-left: 5%;
+
+}
+
+.p5{
+    width: 40rem;
+    color:black;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+.h5{
+    align-items: center;
+    padding-top: 20%;
+    font-weight: bold;
+    padding-left: 12%;
+}
+
+.shop1{
+    
+    align-items: center;
+    padding-top: 20%;
+    font-weight: bold;
+    padding-left: 12%;
+}
+
+.login{
+    background-color:rgb(193, 108, 108);
+}

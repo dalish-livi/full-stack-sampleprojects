@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+.navbar{
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-image: linear-gradient(to right bottom, #5645a6, #6cc7c2);
+  padding-top: 5%;
+}
+.nav-item{
+  margin: 8%;
+  padding-top: 20%;
+  padding-top: 25%;
+  font-weight: bold;
+}
+.btn{
+  background:whitesmoke;
+  width: 250px;
+
+}

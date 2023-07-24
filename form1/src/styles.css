@@ -1,0 +1,28 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+/* You can add global styles to this file, and also import other style files */
+.bg-primary-1 {
+    background-image: linear-gradient(to right bottom, #e4e3eb, hsl(177, 45%, 60%));
+}
+.fill {
+    height: 100vh !important;
+}
+.fw-300 {
+    font-weight: 300 !important;
+}
+.fw-500 {
+    font-weight: 400 !important;
+}
+.border-radius-1{
+    border-radius: 10px !important;
+}
+.border-radius-btn {
+    border-radius: 20px !important;
+}
+.overflow-hide {
+    overflow: hidden !important;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

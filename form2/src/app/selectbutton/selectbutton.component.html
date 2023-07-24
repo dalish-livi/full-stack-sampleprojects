@@ -1,0 +1,51 @@
+<div class="container mt-5">
+<div class="row">
+  <div class="col-md-4">
+    <label for="vehicle-type">Vehicle Type:</label>
+    <select class="form-select" (change)="onSelect($event)">
+      <option>Select Vechile</option>
+      <option *ngFor="let vacs of vac" value="{{vacs.id}}">
+          {{vacs.name}}
+      </option>
+  </select>
+  </div>
+  <div class="col-md-4"> 
+    <label for="brand">Brand:</label>
+    <select class="form-select" (change)="Select($event)">
+      <option>Select BRAND</option>
+      <option *ngFor="let brands of brand">{{brands.name}}</option>
+  </select>
+  </div>
+  <div class="col-md-4">
+    <label for="brand">model:</label>
+    <select class="form-select" (change)="select($event)">
+      <option>Select model</option>
+      <option *ngFor="let models of model" value="{{models.names}}">{{models.names}}</option>
+  </select>
+  </div>
+  <table class="table mt-5">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">Model</th>
+        <th scope="col">CC</th>
+        <th scope="col">oceation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let objectDatas of objectData" [ngClass]="{'Name':objectDatas.name == 'name'}">
+        <th scope="row">1</th>
+        <td>{{objectDatas.name}}</td>
+        <td>{{objectDatas.model}}</td>
+        <td >{{objectDatas.CC}}</td>
+        <td>{{objectDatas. occupation}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+
+</div>
+</div>
+

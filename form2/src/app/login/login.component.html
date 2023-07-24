@@ -1,0 +1,103 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>My Login Accound</h2>
+             <form [formGroup]="login"(ngsubmit)="sub1()">
+                <div class="row mt-4">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" formControlName ="EMAIL" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <span *ngIf="login.controls['EMAIL'].invalid && (login.controls['EMAIL'].dirty || login.controls['EMAIL'].touched)" class="text-danger c-1">
+                            <span *ngIf="login.controls['EMAIL'].errors"> Enter Email</span>
+                          </span>
+                    </div>
+                    <div class="row mt-4">
+                        <label for="exampleInputEmail1">Password</label>
+                        <input type="email" formControlName ="passcode" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
+                        <span *ngIf="login.controls['passcode'].invalid && (login.controls['passcode'].dirty || login.controls['passcode'].touched)" class="text-danger c-1">
+                            <span *ngIf="login.controls['passcode'].errors"> Enter password</span></span>
+                    </div>
+                    <div class="row">
+                        <button type="button" (click)="sub1()"class="btn btn-warning col-md-3 text-align-center mt-3"> Login</button>
+                          <div class="link col-md-8 m-4 d-flex justify-content-end">
+                            <a routerLink="/forgetpassword">Forgot password?</a>
+                          </div>
+                    </div>
+             </form>
+        </div>
+            <div class="col-md-6 ">
+                <div class="container mt-3 mb-4">
+                    <div class="row">
+                        <form [formGroup]="regsition" (ngsubmit)="sub2()">
+                            <div class="row gap-3 mt-3">
+                                <label for="fname" class="col-md-3-form-label col-md-3">First Name</label>
+                                <div class="col-md-8">
+                                    <input type="text" formControlName ="firstname"  class="form-control" id="fname" placeholder="First Name"/> 
+                                    <span *ngIf="regsition.controls['firstname'].invalid && (regsition.controls['firstname'].dirty || regsition.controls['firstname'].touched)" class="text-danger c-1">
+                                        <span *ngIf="regsition.controls['firstname'].errors"> Enter First Name</span>
+                                      </span>
+                                </div>
+                            </div>
+                            <div class="row gap-3 mt-3">
+                                <label for="fname" class="col-md-3-form-label col-md-3">Last Name</label>
+                                <div class="col-md-8">
+                                    <input type="text" formControlName ="lastname" class="form-control" id="fname" placeholder="Last Name"/> 
+                                    <span *ngIf="regsition.controls['lastname'].invalid && (regsition.controls['lastname'].dirty || regsition.controls['lastname'].touched)" class="text-danger c-1">
+                                        <span *ngIf="regsition.controls['lastname'].errors"> Enter Last NAme</span>
+                                      </span> 
+                               </div>
+                            </div>
+                            <div class="row gap-3 mt-3">
+                                <label for="fname" class="col-md-3-form-label col-md-3">Email </label>
+                                <div class="col-md-8">
+                                    <input type="text" formControlName ="emailid" class="form-control" id="fname" placeholder="Email"/> 
+                                    <span *ngIf="regsition.controls['email'].invalid && (regsition.controls['email'].dirty || regsition.controls['email'].touched)" class="text-danger c-1">
+                                        <span *ngIf="regsition.controls['email'].errors"> Enter EmailID</span>
+                                      </span>
+                                </div>
+                            </div>
+                            <div class="row gap-3 mt-3">
+                                <label for="fname" class="col-md-3-form-label col-md-3">Password</label>
+                                <div class="col-md-8">
+                                    <input type="text" formControlName ="password" class="form-control" id="fname" placeholder="Password"/> 
+                                    <span *ngIf="regsition.controls['password'].invalid && (regsition.controls['password'].dirty || regsition.controls['password'].touched)" class="text-danger c-1">
+                                        <span *ngIf="regsition.controls['password'].errors"> Enter password</span>
+                                      </span>
+                                </div>
+                            </div>
+                            <div class="row gap-3 mt-3">
+                                <label for="fname" class="col-md-3-form-label col-md-3">Confirm Password</label>
+                                <div class="col-md-8">
+                                    <input type="text" formControlName ="confirmpassword" class="form-control" id="fname" placeholder="Confirm Password"/> 
+                                    <span *ngIf="regsition.controls['confirmpassword'].invalid && (regsition.controls['confirmpassword'].dirty || regsition.controls['confirmpassword'].touched)" class="text-danger c-1">
+                                        <span *ngIf="regsition.controls['confirmpassword'].errors"> Wrong Password</span>
+                                      </span>
+                                </div>
+                                <div class="row gap-3 mt-3">
+                                    <label for="fname" class="col-md-3-form-label col-md-3">Mobile Number</label>
+                                    <div class="col-md-8">
+                                        <input type="text" formControlName ="mobileno" class="form-control" id="fname" placeholder="Mobile Number"/> 
+                                        <span *ngIf="regsition.controls['mobileno'].invalid && (regsition.controls['mobileno'].dirty || regsition.controls['mobileno'].touched)" class="text-danger c-1">
+                                            <span *ngIf="regsition.controls['mobileno'].errors">Enter  Mobile No</span>
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class="row mt-4 d-flex justify-content-center">
+                                    <input class="form-check-input col-md-3" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label col-md-4" for="flexCheckDefault">
+                                        Agreed To Terms
+                                    </label>
+                                 </div>
+                                <button type="button" (click)="sub2()" class="btn btn-warning text-align-center d-flex justify-content-center"> submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+</div>
+
